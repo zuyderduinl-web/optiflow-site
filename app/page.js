@@ -16,18 +16,14 @@ export default function Home() {
 
       {/* HERO */}
       <section style={{ marginTop: "40px", maxWidth: "520px" }}>
-        <h1 style={{
-          fontSize: "28px",
-          fontWeight: "600",
-          lineHeight: 1.2
-        }}>
+        <h1 style={{ fontSize: "28px", fontWeight: "600", lineHeight: 1.2 }}>
           Zorg dat elke kandidaat wordt opgevolgd
           zonder dat je er zelf achteraan hoeft
         </h1>
 
         <p style={{ marginTop: "16px", color: "#AAB4C3" }}>
-          Je hebt iemand gesproken of benaderd, maar daarna verwatert het.  
-          Dit zorgt dat de follow-up automatisch gebeurt.
+          Je hebt iemand gesproken of benaderd, maar daarna hoor je niks meer.
+          Dit zorgt dat de follow-up automatisch gebeurt zonder dat je ernaar om hoeft te kijken.
         </p>
 
         <button style={{
@@ -40,8 +36,24 @@ export default function Home() {
           borderRadius: "10px",
           fontSize: "16px"
         }}>
-          Bekijk hoe dit werkt
+          Bekijk hoe dit werkt (2 min)
         </button>
+      </section>
+
+      {/* VISUAL FLOW */}
+      <section style={{
+        marginTop: "50px",
+        background: "#111",
+        padding: "20px",
+        borderRadius: "12px"
+      }}>
+        <p style={{ textAlign: "center" }}>
+          LinkedIn bericht  
+          <br />↓<br />
+          Optiflow  
+          <br />↓<br />
+          Automatische follow-up mail
+        </p>
       </section>
 
       {/* PROBLEEM */}
@@ -57,38 +69,18 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* HOE HET WERKT */}
+      {/* VOORBEELD MAIL */}
       <section style={{
         marginTop: "60px",
         background: "#fff",
         color: "#000",
         padding: "20px",
-        borderRadius: "12px"
-      }}>
-        <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
-          Hoe het werkt
-        </h2>
-
-        <div style={{ marginTop: "16px" }}>
-          <p>1. Je benadert iemand (bijv. via LinkedIn)</p>
-          <p>2. Optiflow neemt de follow-up over</p>
-          <p>3. Kandidaten worden automatisch opgevolgd</p>
-        </div>
-      </section>
-
-      {/* VOORBEELD MAIL */}
-      <section style={{
-        marginTop: "60px",
-        background: "#111",
-        padding: "20px",
         borderRadius: "12px",
         fontSize: "14px"
       }}>
-        <h3 style={{ marginBottom: "10px" }}>
-          Voorbeeld van een bericht dat automatisch wordt gestuurd:
-        </h3>
+        <h3>Zo ziet een bericht eruit:</h3>
 
-        <p>
+        <p style={{ marginTop: "12px" }}>
           Hoi Lisa,<br /><br />
           Leuk dat we even contact hadden.<br /><br />
           Sta je open om kort te praten over de rol bij Tech BV?<br /><br />
