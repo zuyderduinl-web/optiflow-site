@@ -27,7 +27,7 @@ export default function Home() {
           alignItems: "center"
         }}>
 
-          {/* TEXT */}
+          {/* LEFT */}
           <div style={{ maxWidth: "520px" }}>
             <h1 style={{
               fontSize: "44px",
@@ -56,35 +56,82 @@ export default function Home() {
               border: "none",
               borderRadius: "12px",
               fontSize: "16px",
-              fontWeight: "500",
               cursor: "pointer"
             }}>
-              Bekijk hoe dit werkt
+              Bekijk hoe dit werkt (2 min)
             </button>
           </div>
 
-          {/* VISUAL CARD */}
+          {/* RIGHT - FAKE UI */}
           <div style={{
             background: "linear-gradient(145deg, #1a2a4a, #0f1e38)",
             borderRadius: "20px",
             padding: "24px",
             boxShadow: "0 20px 60px rgba(0,0,0,0.4)"
           }}>
+
             <div style={{
               background: "#fff",
               color: "#000",
+              borderRadius: "14px",
               padding: "20px",
-              borderRadius: "12px",
               fontSize: "14px"
             }}>
-              <p>
+
+              <div style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginBottom: "16px"
+              }}>
+                <strong>Lisa Jansen</strong>
+                <span style={{ color: "#666" }}>Benaderd</span>
+              </div>
+
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px"
+              }}>
+                <div style={{
+                  background: "#f5f5f5",
+                  padding: "10px",
+                  borderRadius: "8px"
+                }}>
+                  ✔ Eerste bericht verstuurd
+                </div>
+
+                <div style={{
+                  background: "#f5f5f5",
+                  padding: "10px",
+                  borderRadius: "8px"
+                }}>
+                  ⏳ Follow-up over 2 dagen
+                </div>
+
+                <div style={{
+                  background: "#f5f5f5",
+                  padding: "10px",
+                  borderRadius: "8px"
+                }}>
+                  ⏳ Laatste reminder over 5 dagen
+                </div>
+              </div>
+
+              <div style={{
+                marginTop: "16px",
+                padding: "12px",
+                background: "#fafafa",
+                borderRadius: "8px",
+                fontSize: "13px",
+                color: "#333"
+              }}>
                 Hoi Lisa,<br /><br />
                 Leuk dat we even contact hadden.<br /><br />
                 Sta je open om kort te praten over de rol bij Tech BV?<br /><br />
-                Laat even weten wat voor jou uitkomt 🙂<br /><br />
                 Groet,<br />
                 Henk
-              </p>
+              </div>
+
             </div>
           </div>
 
@@ -97,13 +144,12 @@ export default function Home() {
           borderRadius: "16px",
           padding: "30px",
           textAlign: "center",
-          fontSize: "16px",
           color: "#ccc"
         }}>
           LinkedIn bericht → Optiflow → automatische follow-up mail
         </section>
 
-        {/* GRID SECTION */}
+        {/* GRID */}
         <section style={{
           marginTop: "100px",
           display: "grid",
@@ -111,12 +157,10 @@ export default function Home() {
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))"
         }}>
 
-          {/* PROBLEEM */}
           <div>
             <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
               Herkenbaar?
             </h2>
-
             <ul style={{ marginTop: "16px", color: "#AAB4C3" }}>
               <li>• Je hebt contact maar hoort niks</li>
               <li>• Follow-up schiet er tussendoor</li>
@@ -124,12 +168,10 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* RESULTAAT */}
           <div>
             <h2 style={{ fontSize: "20px", fontWeight: "600" }}>
               Resultaat
             </h2>
-
             <ul style={{ marginTop: "16px", color: "#AAB4C3" }}>
               <li>• Meer reacties zonder extra werk</li>
               <li>• Consistente opvolging</li>
